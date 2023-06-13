@@ -13,7 +13,7 @@ npm i unplugin-mockup
 
 ```ts
 // vite.config.ts
-import Mock from "unplugin-mockup/vite";
+import Mock from 'unplugin-mockup/vite'
 
 export default defineConfig({
   plugins: [
@@ -21,7 +21,7 @@ export default defineConfig({
       /* options */
     }),
   ],
-});
+})
 ```
 
 Example: [`playground/`](./playground/)
@@ -33,7 +33,7 @@ Example: [`playground/`](./playground/)
 
 ```ts
 // rollup.config.js
-import Mock from "unplugin-mockup/rollup";
+import Mock from 'unplugin-mockup/rollup'
 
 export default {
   plugins: [
@@ -41,7 +41,7 @@ export default {
       /* options */
     }),
   ],
-};
+}
 ```
 
 <br></details>
@@ -54,11 +54,11 @@ export default {
 module.exports = {
   /* ... */
   plugins: [
-    require("unplugin-mockup/webpack")({
+    require('unplugin-mockup/webpack')({
       /* options */
     }),
   ],
-};
+}
 ```
 
 <br></details>
@@ -71,13 +71,13 @@ module.exports = {
 export default {
   buildModules: [
     [
-      "unplugin-mockup/nuxt",
+      'unplugin-mockup/nuxt',
       {
         /* options */
       },
     ],
   ],
-};
+}
 ```
 
 > This module works for both Nuxt 2 and [Nuxt Vite](https://github.com/nuxt/vite)
@@ -92,12 +92,12 @@ export default {
 module.exports = {
   configureWebpack: {
     plugins: [
-      require("unplugin-mockup/webpack")({
+      require('unplugin-mockup/webpack')({
         /* options */
       }),
     ],
   },
-};
+}
 ```
 
 <br></details>
@@ -107,12 +107,12 @@ module.exports = {
 
 ```ts
 // esbuild.config.js
-import { build } from "esbuild";
-import Mock from "unplugin-mockup/esbuild";
+import { build } from 'esbuild'
+import Mock from 'unplugin-mockup/esbuild'
 
 build({
   plugins: [Mock()],
-});
+})
 ```
 
 <br></details>
@@ -121,3 +121,5 @@ build({
 
 To test plugin, run: `pnpm run dev`
 To release a new version, run: `pnpm run release`
+
+
